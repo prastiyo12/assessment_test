@@ -34,11 +34,7 @@ A simple and scalable REST API built with Express.js and TypeScript.
       ```bash
       npm run dev
       ```
-   ### Start the Development Server
-      ```bash
-      npm run build
-      npm start
-      ```
+      
 ## 📌 API Endpoints
  - POST	 /api/user	Create a new User.
  - DELETE	/api/user/:id	Delete User by ID
