@@ -1,0 +1,39 @@
+{
+  "name": "assessment_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "typeorm": "ts-node ./node_modules/typeorm/cli",
+    "typeorm:generate": "npx typeorm-ts-node-esm migration:generate -d src/data-source.ts",
+    "typeorm:migrate": "npx typeorm-ts-node-esm migration:run -d src/data-source.ts",
+    "typeorm:revert": "npx typeorm-ts-node-esm migration:revert -d src/data-source.ts",
+    "typeorm:drop": "npx typeorm-ts-node-esm schema:drop -d src/data-source.ts",
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "moment-timezone": "^0.5.47",
+    "mysql2": "^3.12.0",
+    "node-cron": "^3.0.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "@types/node-cron": "^3.0.11",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

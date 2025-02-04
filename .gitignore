@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Dependency lock files (optional, if you regenerate frequently)
+package-lock.json
+yarn.lock
