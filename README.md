@@ -24,6 +24,10 @@ A simple and scalable REST API built with Express.js and TypeScript.
 - ### Create an .env File
    Rename .env-example file to .env in the root directory and adjust it to your local machine.
 
+- ### Migration database
+     ```bash
+     npm run typeorm:migrate
+     ```
 
 ## 🚀 Running the Project
    ### Start the Development Server
